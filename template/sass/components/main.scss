@@ -1,0 +1,144 @@
+// imported files
+@import '../global.scss';
+@import '../colors.scss';
+
+// style
+.main {
+  position: relative;
+  height: 87vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .answerBox{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    .answerTitle {
+      font-size: 5rem;
+      font-family: 'Lobster',cursive;
+    }
+
+    .answerBtnBox {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+
+      .answerYes, 
+      .answerNo {
+        height: 5vh;
+        width: 5vw;
+        border: none;
+        outline: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 50px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: .5s;
+  
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+  
+      .answerYes {
+        background-color: #ffffff;
+        color: $primary-color;
+      }
+  
+      .answerNo {
+        position: relative;
+        background-color: $primary-color;
+      }
+    }
+
+  }
+}
+
+// responsive
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .main {
+    .answerBox {
+      .answerBtnBox {
+        .answerYes, 
+        .answerNo {
+          width: 8vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .main {
+    .answerBox {
+      .answerBtnBox {
+        .answerYes, 
+        .answerNo {
+          width: 10vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .main {
+    .answerBox {
+      .answerTitle {
+        font-size: 4rem;
+      }
+
+      .answerBtnBox {
+        .answerYes, 
+        .answerNo {
+          width: 20vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .main {
+    .answerBox {
+      .answerTitle {
+        font-size: 3.75rem;
+      }
+
+      .answerBtnBox {
+        .answerYes, 
+        .answerNo {
+          width: 20vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main {
+    .answerBox {
+      .answerTitle {
+        font-size: 3.5rem;
+      }
+
+      .answerBtnBox {
+        .answerYes, 
+        .answerNo {
+          width: 25vw;
+        }
+      }
+    }
+  }
+}
+

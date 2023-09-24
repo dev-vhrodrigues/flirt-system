@@ -1,0 +1,16 @@
+// imported files
+@import './colors.scss';
+
+// fonts
+@import 'https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@100&family=Lobster&family=Montserrat:wght@300&family=Open+Sans&family=Poppins:wght@400;500;600&family=Roboto+Slab:wght@200&family=Roboto:wght@500&family=Square+Peg&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@100&family=Lobster&family=Montserrat:wght@300&family=Open+Sans&family=Poppins&family=Roboto+Slab:wght@200&family=Roboto:wght@500&family=Square+Peg&display=swap');
+
+// style
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100%;
+}
